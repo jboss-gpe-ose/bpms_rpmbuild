@@ -1,6 +1,5 @@
 Purpose
-  - JBoss EAP 6 used specifically to support Red Hat JBoss BPMS, BRMS and FSW.
-  - This RPM targets BPMS, BRMS and FSW in both OSE and traditional non-cloud, RHEL environments
+  - software package management of JBoss Business Process Management (BPMS) v6 on Red Hat Enterprise Linux (RHEL)
 
 Build Procedure
   - ensure that 'jboss_bpm_soa' RPM has already been installed on target operating system
@@ -18,4 +17,3 @@ Build Procedure
   - sudo rpm -e bpms
 
  TO-DO
- 1)  specify dependency on jboss_bpm_soa RPM

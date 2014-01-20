@@ -6,6 +6,7 @@ Group:          Red Hat JBoss
 License:        GPLv3+
 URL:            http://www.redhat.com
 Source0:        jboss-bpms-6.0.0-redhat-7-deployable-eap6.x.zip
+Requires:       jboss_bpm_soa = 6.1.1
 
 %description
 
