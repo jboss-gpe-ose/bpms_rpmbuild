@@ -18,5 +18,9 @@ unzip %{SOURCE0} -d $RPM_BUILD_ROOT/opt/jboss_bpm_soa
 %clean
 rm -rf $RPM_BUILD_ROOT
 
+%post
+# ensure compatibility with FSW
+echo "layers=bpms,soa" > /opt/jboss_bpm_soa/jboss-eap-6.1/modules/layers.conf
+
 %files
 /opt/jboss_bpm_soa/*
