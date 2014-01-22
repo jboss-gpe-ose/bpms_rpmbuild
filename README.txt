@@ -1,5 +1,5 @@
 Purpose
-  - software package management of JBoss Business Process Management (BPMS) v6 on Red Hat Enterprise Linux (RHEL)
+  - package management of JBoss Business Process Management (BPMS) v6 on Red Hat Enterprise Linux (RHEL)
 
 Build Procedure
   - ensure that 'jboss_bpm_soa' RPM has already been installed on target operating system
