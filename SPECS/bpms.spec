@@ -5,7 +5,7 @@ Summary:        JBoss Business Process Management System (BPMS) Deployable for J
 Group:          Red Hat JBoss
 License:        GPLv3+
 URL:            http://www.redhat.com
-Source0:        jboss-bpms-6.0.0-redhat-7-deployable-eap6.x.zip
+Source0:        jboss-bpms-6.0.0.GA-redhat-1-deployable-eap6.x.zip
 Requires:       jboss_bpm_soa = 6.1.1
 
 %description
@@ -21,6 +21,8 @@ rm -rf $RPM_BUILD_ROOT
 %post
 # ensure compatibility with FSW
 echo "layers=bpms,soa" > /opt/jboss_bpm_soa/jboss-eap-6.1/modules/layers.conf
+mkdir -p /opt/jboss_bpm_soa/jboss-eap-6.1/modules/system/layers/soa
+chmod -R 777 /opt/jboss_bpm_soa/jboss-eap-6.1/standalone/deployments/business-central.war
 
 %files
 /opt/jboss_bpm_soa/*
