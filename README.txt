@@ -1,12 +1,13 @@
 Purpose
-  - package management of JBoss Business Process Management (BPMS) v6 on Red Hat Enterprise Linux (RHEL)
+  - package management of JBoss BPMSv6 on Red Hat Enterprise Linux (RHEL)
 
 Build Procedure
-  - ensure that 'jboss_bpm_soa' RPM has already been installed on target operating system
+  - ensure that 'jboss_bpm_soa' RPM has already been installed (or is
+    available via yum)
   - clone this project from github
-  - download jboss-bpms-6.0.0-redhat-7-deployable-eap6.x.zip from Red Hat Customer Support Portal
+  - download jboss-bpms-6.0.0.GA-redhat-2-deployable-eap6.x.zip from Red Hat Customer Support Portal
   - cd /path/to/this/bpms_rpmbuild
-  - cp /path/to/jboss-bpms-6.0.0-redhat-7-deployable-eap6.x.zip SOURCES
+  - cp /path/to/jboss-bpms-6.0.0.GA-redhat-2-deployable-eap6.x.zip SOURCES
   - rpmbuild --define "_sourcedir `pwd`/SOURCES" -ba SPECS/bpms.spec
   - rpm -qlp ~/rpmbuild/RPMS/x86_64/bpms-6.0.0-1.el6.x86_64.rpm
   - sudo rpm -ivh --replacefiles ~/rpmbuild/RPMS/x86_64/bpms-6.0.0-1.el6.x86_64.rpm
