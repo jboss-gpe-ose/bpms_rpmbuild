@@ -5,7 +5,8 @@ Build Procedure
   - ensure that 'jboss_bpm_soa' RPM has already been installed (or is
     available via yum)
   - clone this project from github
-  - download jboss-bpms-6.0.0.GA-redhat-2-deployable-eap6.x.zip from Red Hat Customer Support Portal
+  - download jboss-bpms-6.0.0.GA-redhat-2-deployable-eap6.x.zip from Red Hat
+    http://dev138.mw.lab.eng.bos.redhat.com/candidate/bpms-6.0.0-CR2/
   - cd /path/to/this/bpms_rpmbuild
   - cp /path/to/jboss-bpms-6.0.0.GA-redhat-2-deployable-eap6.x.zip SOURCES
   - rpmbuild --define "_sourcedir `pwd`/SOURCES" -ba SPECS/bpms.spec
