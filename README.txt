@@ -11,7 +11,7 @@ Build Procedure
   - cp /path/to/jboss-bpms-6.0.0.GA-redhat-2-deployable-eap6.x.zip SOURCES
   - rpmbuild --define "_sourcedir `pwd`/SOURCES" -ba SPECS/bpms.spec
   - rpm -qlp ~/rpmbuild/RPMS/x86_64/bpms-6.0.0-1.el6.x86_64.rpm
-  - sudo rpm -ivh --replacefiles ~/rpmbuild/RPMS/x86_64/bpms-6.0.0-1.el6.x86_64.rpm
+  - sudo rpm -ivh ~/rpmbuild/RPMS/x86_64/bpms-6.0.0-1.el6.x86_64.rpm
     - NOTE:  
         - BPMS6 intentionally over-rides several configuration files from JBoss EAP6.1.1
         - writing over these files is safe and can be done with RPM via "--replacefiles" flag
