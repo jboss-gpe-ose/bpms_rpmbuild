@@ -6,8 +6,7 @@
 * If you are still interested in leveraging this project to build your own RPMs, then the following applies:
 . ensure that 'jboss_bpm_soa' RPM has already been installed on target operating system
 . clone this project from github
-. download jboss-bpms-6.0.0.GA-redhat-1-deployable-eap6.x.zip from :
-**    http://dev138.mw.lab.eng.bos.redhat.com/candidate/bpms-6.0.0-CR1/
+. download jboss-bpms-6.0.0.GA-redhat-1-deployable-eap6.x.zip from the RHT Customer Support Portal:
 . cd /path/to/this/bpms_rpmbuild
 . cp /path/to/jboss-bpms-6.0.0.GA-redhat-1-deployable-eap6.x.zip SOURCES
 . rpmbuild --define "_sourcedir `pwd`/SOURCES" -ba SPECS/bpms.spec
